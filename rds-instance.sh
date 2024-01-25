@@ -17,8 +17,10 @@ stop_ec2() {
 
 start_rds() {
     aws rds start-db-instance --db-instance-identifier $instance_rds --region $region --profile $profile
+    echo "Instância $instance_rds startada com sucesso!"
 }
 
 stop_rds() {
     aws rds start-db-instance --db-instance-identifier $instance_rds --region $region --profile $profile
+    echo "Instância $instance_rds finalizada com sucesso!"
 }
